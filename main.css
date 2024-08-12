@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Esta configuração permite que os ul li e p estejam sempre em uma */
+/* fonte de tamanho adequado a dispositovos móveis*/
+body, ul, li, p {
+    list-style: none; /* Aqui removemos os pontos da lista de menu*/
+    font-size: 1.2rem; /* Aqui é para ser visto em todos os dispositivos*/
+}
+
+/*######################################*/
+/* Área de header cabeçalho*/
+
+/* Área de configuração do comportamento do header cabeçalho e cor*/
+.header { /* aqui é um header com uma class de .container*/
+    background-color: brown;
+    display: flex; /* Configurado co display flex (um bloco ao lado do outro)*/
+    flex-wrap: wrap; /* conf. com flex-wrap (quando não há mais espaço coloca os blocos um abaixo do outro)*/
+    justify-content: space-between; /* conf. justfy-content: space-between (cria espaçamento entre os itens)*/
+    padding: 20px;  /* cria espaçamento de parágrafo para todos os lados de 20px*/
+    align-items: center; /* Alinhamento dos items dentro do bloco centralizado*/
+}
+
+/* Área de configuração dos Títulos do cabeçalho*/
+.header h1 a {
+    color:#f0f0f0; /* cor da fonte*/
+    padding-left: 5px; /* espaçamento do parágrafo à esquerda de 5px*/
+    text-decoration: none; /* Decoração do link ou sublinhado none (nenhum)*/
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* fonte dos títulos do cabeçalho 'IMPACT', 'Arial Narrow Bold'*/
+}
+
+/* Área de configuração do menu*/
+.menu { /* Aqui é um nav com uma class menu*/
+    display: flex; /* Configurado co display flex (um bloco ao lado do outro)*/
+}
+
+.menu li {
+    padding-left: 5px; /* espaçamento do parágrafo à esquerda de 5px*/
+    padding-right: 10px; /* espaçamento do parágrafo à direita de 10px*/
+}
+
+.header li a {
+    color: #f0f0f0; /* cor da fonte*/
+    text-decoration: none;/* Decoração do link ou sublinhado none (nenhum)*/
+    font-family: Arial, Helvetica, sans-serif; /* Fonte do texto de Arial, helvetica*/
+}
+
+/* Área das seções dos artigos */
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+/*######################################*/
+/* Área de formatação dos artigos */
+.articles h1 {
+    padding: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+ 
+
+}
+
+.articles > div {
+    flex: 1;
+    flex-shrink: 1;
+    flex-basis: 200px;
+    margin: 10px;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    padding: 8px;
+    background-color: rgb(255, 245, 186);
+}
+/*######################################*/
+/* Área do formulário */
+
+form input, label,h3 {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+footer p {
+
+}
