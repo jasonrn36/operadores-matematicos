@@ -1,7 +1,5 @@
 /*################################################################################# */
 const btn  = document.querySelector('#somar');
-const num1 = document.getElementById('num-1');
-const num2 = document.getElementById('num-2');
 
 
 btn.addEventListener('click', function() {
@@ -27,8 +25,6 @@ btn.addEventListener('click', function() {
 /*############################################################################*/
 /* Área dO BLOCO SUBTRAÇÃO */
 const btnSubtrair  = document.querySelector('#btn-subitrair');
-const num3 = document.getElementById('num-3');
-const num4 = document.getElementById('num-4');
 
 
 btnSubtrair.addEventListener('click', function() {
@@ -44,6 +40,57 @@ btnSubtrair.addEventListener('click', function() {
 
     if (!isNaN(subtrair)) {
         alert(`\nO valor da Subtração é: ${subtrair}`);
+    }else{
+        alert(mensagemErro);
+
+    }
+
+});
+
+/*############################################################################*/
+/* Área Divisão */
+const btnDividir  = document.querySelector('#btn-dividir');
+
+
+btnDividir.addEventListener('click', function() {
+
+    
+    var number1 = parseInt(document.querySelector("#number-1").value);
+    var number2 = parseInt(document.querySelector("#number-2").value);
+    let Label3 = document.getElementById('#Label-3'.value);
+    let Label4 = document.getElementById('#Label-4'.value);
+    const mensagemErro = `\nEste bloco soma dois campos: \ncampo A + campo B, \nTente novamente`;
+
+    var dividir = number1 / number2;
+
+    if (!isNaN(dividir)) {
+        alert(`\nO valor da divisão é: ${dividir}`);
+    }else{
+        alert(mensagemErro);
+
+    }
+
+});
+
+/*############################################################################*/
+/* Área Multiplicação */
+
+/// Área de declaraçã das constantes
+const btnMultiplicar  = document.querySelector('#btn-multiplicar');
+
+btnMultiplicar.addEventListener('click', function() {
+
+
+    var number3 = parseInt(document.querySelector("#number-3").value);
+    var number4 = parseInt(document.querySelector("#number-4").value);
+    let Label5 = document.getElementById('#Label-5'.value);
+    let Label6 = document.getElementById('#Label-6'.value);
+    const mensagemErro = `\nEste bloco multiplica dois campos: \ncampo A + campo B, \nTente novamente`;
+
+    var multiplicar = number3 * number4;
+
+    if (!isNaN(multiplicar)) {
+        alert(`\nO valor da multiplicação é: ${multiplicar}`);
     }else{
         alert(mensagemErro);
 

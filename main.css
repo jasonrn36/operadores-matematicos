@@ -17,7 +17,7 @@ body, ul, li, p {
 
 /* Área de configuração do comportamento do header cabeçalho e cor*/
 .header { /* aqui é um header com uma class de .container*/
-    background-color: brown;
+    background-color: #833b90;
     display: flex; /* Configurado co display flex (um bloco ao lado do outro)*/
     flex-wrap: wrap; /* conf. com flex-wrap (quando não há mais espaço coloca os blocos um abaixo do outro)*/
     justify-content: space-between; /* conf. justfy-content: space-between (cria espaçamento entre os itens)*/
@@ -88,5 +88,9 @@ form input, label,h3 {
 }
 
 footer p {
+    background-color: #833b90;
+    color:#f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+
 
 }
